@@ -1,0 +1,100 @@
+line 2 column 1 - Warning: unknown attribute "prefix"
+line 4 column 5 - Warning: meta lacks "content" attribute
+line 5 column 1 - Warning: <style> lacks "type" attribute
+line 10 column 1 - Warning: unknown attribute "property"
+line 11 column 1 - Warning: unknown attribute "property"
+line 12 column 1 - Warning: unknown attribute "property"
+line 19 column 1 - Warning: <style> lacks "type" attribute
+line 25 column 1 - Warning: unknown attribute "async"
+line 25 column 1 - Warning: <script> lacks "type" attribute
+line 26 column 1 - Warning: <script> lacks "type" attribute
+line 39 column 1 - Warning: <script> lacks "type" attribute
+line 40 column 1 - Warning: <script> lacks "type" attribute
+line 43 column 5 - Warning: link lacks "type" attribute
+line 44 column 1 - Warning: link lacks "type" attribute
+line 45 column 1 - Warning: link lacks "type" attribute
+line 46 column 1 - Warning: link lacks "type" attribute
+line 47 column 1 - Warning: link lacks "type" attribute
+line 48 column 1 - Warning: link lacks "type" attribute
+line 49 column 1 - Warning: link lacks "type" attribute
+line 50 column 1 - Warning: link lacks "type" attribute
+line 51 column 1 - Warning: link lacks "type" attribute
+line 52 column 1 - Warning: link lacks "type" attribute
+line 53 column 1 - Warning: link lacks "type" attribute
+line 54 column 1 - Warning: link lacks "type" attribute
+line 55 column 1 - Warning: link lacks "type" attribute
+line 56 column 1 - Warning: link lacks "type" attribute
+line 57 column 1 - Warning: link lacks "type" attribute
+line 58 column 1 - Warning: link lacks "type" attribute
+line 59 column 1 - Warning: link lacks "type" attribute
+line 60 column 1 - Warning: link lacks "type" attribute
+line 61 column 1 - Warning: link lacks "type" attribute
+line 62 column 1 - Warning: link lacks "type" attribute
+line 63 column 1 - Warning: link lacks "type" attribute
+line 64 column 1 - Warning: link lacks "type" attribute
+line 65 column 1 - Warning: link lacks "type" attribute
+line 66 column 1 - Warning: link lacks "type" attribute
+line 67 column 1 - Warning: link lacks "type" attribute
+line 68 column 1 - Warning: link lacks "type" attribute
+line 69 column 1 - Warning: link lacks "type" attribute
+line 70 column 1 - Warning: link lacks "type" attribute
+line 71 column 1 - Warning: link lacks "type" attribute
+line 72 column 1 - Warning: link lacks "type" attribute
+line 73 column 1 - Warning: link lacks "type" attribute
+line 74 column 1 - Warning: link lacks "type" attribute
+line 75 column 1 - Warning: link lacks "type" attribute
+line 76 column 1 - Warning: link lacks "type" attribute
+line 77 column 1 - Warning: link lacks "type" attribute
+line 78 column 1 - Warning: link lacks "type" attribute
+line 87 column 7 - Warning: unknown attribute "data-off-canvas-main-canvas"
+line 92 column 3 - Error: <header> is not recognized!
+line 92 column 3 - Warning: discarding unexpected <header>
+line 95 column 9 - Error: <nav> is not recognized!
+line 95 column 9 - Warning: discarding unexpected <nav>
+line 102 column 17 - Warning: unknown attribute "data-target"
+line 102 column 17 - Warning: unknown attribute "data-toggle"
+line 104 column 2 - Error: <svg> is not recognized!
+line 104 column 2 - Warning: discarding unexpected <svg>
+line 105 column 6 - Warning: missing </button> before <title>
+line 105 column 6 - Warning: <title> isn't allowed in <button> elements
+line 106 column 6 - Error: <g> is not recognized!
+line 106 column 6 - Warning: discarding unexpected <g>
+line 107 column 10 - Error: <g> is not recognized!
+line 107 column 10 - Warning: discarding unexpected <g>
+line 108 column 14 - Error: <path> is not recognized!
+line 108 column 14 - Warning: discarding unexpected <path>
+line 108 column 279 - Warning: discarding unexpected </path>
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+2,402 warnings, 255 errors were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.
+It is unlikely that vendor-specific, system-dependent encodings
+work widely enough on the World Wide Web; you should avoid using the 
+specified character encoding, instead you are recommended to
+use named entities, e.g. &trade;.
+Character codes 128 to 159 (U+0080 to U+009F) are not allowed in HTML;
+even if they were, they would likely be unprintable control characters.
+Tidy assumed you wanted to refer to a character with the same byte value in the 
+specified encoding and replaced that reference with the Unicode equivalent.
+Character codes for UTF-8 must be in the range: U+0000 to U+10FFFF.
+The definition of UTF-8 in Annex D of ISO/IEC 10646-1:2000 also
+allows for the use of five- and six-byte sequences to encode
+characters that are outside the range of the Unicode character set;
+those five- and six-byte sequences are illegal for the use of
+UTF-8 as a transformation of Unicode characters. ISO/IEC 10646
+does not allow mapping of unpaired surrogates, nor U+FFFE and U+FFFF
+(but it does allow other noncharacters). For more information please refer to
+http://www.unicode.org/unicode and http://www.cl.cam.ac.uk/~mgk25/unicode.html
+Character codes for UTF-16 must be in the range: U+0000 to U+10FFFF.
+The definition of UTF-16 in Annex C of ISO/IEC 10646-1:2000 does not allow the
+mapping of unpaired surrogates. For more information please refer to
+http://www.unicode.org/unicode and http://www.cl.cam.ac.uk/~mgk25/unicode.html
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
