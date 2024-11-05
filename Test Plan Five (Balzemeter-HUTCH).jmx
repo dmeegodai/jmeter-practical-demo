@@ -6,8 +6,11 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+<<<<<<< HEAD
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+=======
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
@@ -87,7 +90,11 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
+<<<<<<< HEAD
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+=======
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
         <intProp name="ThreadGroup.num_threads">25</intProp>
         <intProp name="ThreadGroup.ramp_time">2</intProp>
         <longProp name="ThreadGroup.duration">0</longProp>
@@ -100,7 +107,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
+<<<<<<< HEAD
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
+=======
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test">
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -674,7 +685,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
+<<<<<<< HEAD
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+=======
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -711,7 +726,11 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+<<<<<<< HEAD
         <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+=======
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -748,7 +767,11 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
+<<<<<<< HEAD
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+=======
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+>>>>>>> 4a46c8d2bb848b6ca99b495b4163a999372ad9d5
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
