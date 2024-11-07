@@ -29,7 +29,7 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_URL_1" elementType="Argument">
             <stringProp name="Argument.name">BASE_URL_1</stringProp>
@@ -69,7 +69,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
         <boolProp name="HTTPSampler.image_parser">true</boolProp>
         <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
         <intProp name="HTTPSampler.concurrentPool">6</intProp>
@@ -79,25 +79,25 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
         <collectionProp name="DNSCacheManager.servers"/>
         <collectionProp name="DNSCacheManager.hosts"/>
         <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
         <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
       </DNSCacheManager>
       <hashTree/>
-      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
         <collectionProp name="AuthManager.auth_list"/>
         <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
       </AuthManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
@@ -116,11 +116,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/?spm=a2a0e.tm80335410.header.dhome" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/?spm=a2a0e.tm80335410.header.dhome">
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -135,6 +135,7 @@
                   <stringProp name="Argument.name">spm</stringProp>
                   <stringProp name="Argument.value">a2a0e.tm80335410.header.dhome</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -160,7 +161,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -192,7 +193,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -224,7 +225,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -256,7 +257,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count">
             <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -288,7 +289,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -320,7 +321,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/?jsv=2.7.4&amp;appKey=24937400&amp;t=1730771414793&amp;sign=6a09fa01bf5d7a95969c0512c9b32084&amp;api=mtop.relationrecommend.LazadaRecommend.recommend&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;data=%7B%22appId%22%3A%2241701%22%2C%22params%22%3A%22%7B%5C%22appId%5C%22%3A%5C%2241701%5C%22%2C%5C%22isbackup%5C%22%3Atrue%2C%5C%22newTileEnable%5C%22%3Atrue%2C%5C%22language%5C%22%3A%5C%22en%5C%22%2C%5C%22region_id%5C%22%3A%5C%22LK%5C%22%2C%5C%22platform%5C%22%3A%5C%22pc%5C%22%2C%5C%22scene%5C%22%3A%5C%22homepage%5C%22%2C%5C%22appVersion%5C%22%3A%5C%227.48.0%5C%22%2C%5C%22anonymous_id%5C%22%3A%5C%225hCkHwXDQCoCAbahGLSN%2Bmwl%5C%22%2C%5C%22pageSize%5C%22%3A50%2C%5C%22userId%5C%22%3A0%2C%5C%22pageNo%5C%22%3A0%7D%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/?jsv=2.7.4&amp;appKey=24937400&amp;t=1730771414793&amp;sign=6a09fa01bf5d7a95969c0512c9b32084&amp;api=mtop.relationrecommend.LazadaRecommend.recommend&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;data=%7B%22appId%22%3A%2241701%22%2C%22params%22%3A%22%7B%5C%22appId%5C%22%3A%5C%2241701%5C%22%2C%5C%22isbackup%5C%22%3Atrue%2C%5C%22newTileEnable%5C%22%3Atrue%2C%5C%22language%5C%22%3A%5C%22en%5C%22%2C%5C%22region_id%5C%22%3A%5C%22LK%5C%22%2C%5C%22platform%5C%22%3A%5C%22pc%5C%22%2C%5C%22scene%5C%22%3A%5C%22homepage%5C%22%2C%5C%22appVersion%5C%22%3A%5C%227.48.0%5C%22%2C%5C%22anonymous_id%5C%22%3A%5C%225hCkHwXDQCoCAbahGLSN%2Bmwl%5C%22%2C%5C%22pageSize%5C%22%3A50%2C%5C%22userId%5C%22%3A0%2C%5C%22pageNo%5C%22%3A0%7D%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -336,90 +337,105 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;appId&quot;:&quot;41701&quot;,&quot;params&quot;:&quot;{\&quot;appId\&quot;:\&quot;41701\&quot;,\&quot;isbackup\&quot;:true,\&quot;newTileEnable\&quot;:true,\&quot;language\&quot;:\&quot;en\&quot;,\&quot;region_id\&quot;:\&quot;LK\&quot;,\&quot;platform\&quot;:\&quot;pc\&quot;,\&quot;scene\&quot;:\&quot;homepage\&quot;,\&quot;appVersion\&quot;:\&quot;7.48.0\&quot;,\&quot;anonymous_id\&quot;:\&quot;5hCkHwXDQCoCAbahGLSN+mwl\&quot;,\&quot;pageSize\&quot;:50,\&quot;userId\&quot;:0,\&quot;pageNo\&quot;:0}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">LK</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">6a09fa01bf5d7a95969c0512c9b32084</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.4</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="timeout" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">timeout</stringProp>
                   <stringProp name="Argument.value">20000</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771414793</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sessionOption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sessionOption</stringProp>
                   <stringProp name="Argument.value">AutoLoginOnly</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="AntiCreep" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">AntiCreep</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24937400</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="isSec" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">isSec</stringProp>
                   <stringProp name="Argument.value">1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">api</stringProp>
                   <stringProp name="Argument.value">mtop.relationrecommend.LazadaRecommend.recommend</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -455,7 +471,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/products/professional-nova-foldable-hair-dryer-compact-and-powerful-for-salon-quality-styling-i113580647-s1024812350.html?scm=1007.51657.380827.0&amp;pvid=37d200a6-91e8-4998-b415-871c10f4582e&amp;search=flashsale&amp;spm=a2a0e.tm80335410.FlashSale.d_113580647" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/products/professional-nova-foldable-hair-dryer-compact-and-powerful-for-salon-quality-styling-i113580647-s1024812350.html?scm=1007.51657.380827.0&amp;pvid=37d200a6-91e8-4998-b415-871c10f4582e&amp;search=flashsale&amp;spm=a2a0e.tm80335410.FlashSale.d_113580647">
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -471,24 +487,28 @@
                   <stringProp name="Argument.name">spm</stringProp>
                   <stringProp name="Argument.value">a2a0e.tm80335410.FlashSale.d_113580647</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="search" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">search</stringProp>
                   <stringProp name="Argument.value">flashsale</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="pvid" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">pvid</stringProp>
                   <stringProp name="Argument.value">37d200a6-91e8-4998-b415-871c10f4582e</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="scm" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">scm</stringProp>
                   <stringProp name="Argument.value">1007.51657.380827.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -514,7 +534,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getContextInfo" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getContextInfo">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -538,7 +558,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.global.detail.web.getdetailinfo/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771423789&amp;sign=2f47373d683dc06e8515f33ef9187ab9&amp;api=mtop.global.detail.web.getDetailInfo&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.global.detail.web.getdetailinfo/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771423789&amp;sign=2f47373d683dc06e8515f33ef9187ab9&amp;api=mtop.global.detail.web.getDetailInfo&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -554,78 +574,91 @@
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">LK</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">2f47373d683dc06e8515f33ef9187ab9</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.6.1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="timeout" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">timeout</stringProp>
                   <stringProp name="Argument.value">20000</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771423789</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sessionOption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sessionOption</stringProp>
                   <stringProp name="Argument.value">AutoLoginOnly</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="AntiCreep" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">AntiCreep</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24937400</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="isSec" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">isSec</stringProp>
                   <stringProp name="Argument.value">1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appkey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -725,7 +758,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count">
             <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -757,7 +790,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.guided.shopping.categories.categorieslpcommon/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771424268&amp;sign=f6825a7052a608b1bce6b13c104db4a3&amp;api=mtop.lazada.guided.shopping.categories.categoriesLpCommon&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;appkey=24677475&amp;data=%7B%22regionId%22%3A%22LK%22%2C%22language%22%3A%22en%22%2C%22platform%22%3A%22pc%22%2C%22isbackup%22%3A%22true%22%2C%22backupParams%22%3A%22language%2CregionID%2Cplatform%2CpageNo%22%2C%22moduleName%22%3A%22categoriesLpMultiFloor%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.guided.shopping.categories.categorieslpcommon/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771424268&amp;sign=f6825a7052a608b1bce6b13c104db4a3&amp;api=mtop.lazada.guided.shopping.categories.categoriesLpCommon&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;appkey=24677475&amp;data=%7B%22regionId%22%3A%22LK%22%2C%22language%22%3A%22en%22%2C%22platform%22%3A%22pc%22%2C%22isbackup%22%3A%22true%22%2C%22backupParams%22%3A%22language%2CregionID%2Cplatform%2CpageNo%22%2C%22moduleName%22%3A%22categoriesLpMultiFloor%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -773,78 +806,91 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;regionId&quot;:&quot;LK&quot;,&quot;language&quot;:&quot;en&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;isbackup&quot;:&quot;true&quot;,&quot;backupParams&quot;:&quot;language,regionID,platform,pageNo&quot;,&quot;moduleName&quot;:&quot;categoriesLpMultiFloor&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">LK</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">f6825a7052a608b1bce6b13c104db4a3</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.6.1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="timeout" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">timeout</stringProp>
                   <stringProp name="Argument.value">20000</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771424268</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sessionOption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sessionOption</stringProp>
                   <stringProp name="Argument.value">AutoLoginOnly</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="AntiCreep" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">AntiCreep</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24937400</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="isSec" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -906,7 +952,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -938,7 +984,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -954,18 +1000,21 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">107!f2GFX5ZGfQ6f5b0wWPJkTF8G9UN0Eny5yX/AJ/o6zCaSOd+UGQs09zJS5Rb8DhCgOSYmAiAp5/ihcsxGPWCNSue3g1VtrIwLffxu1sfgdwtfPFfPbh/HXxVTz5DwWY+an+RI05WhQ/F9fNlktJJi6PPXwdH6eAX8XfqHACEFerKPfa6q5PG3Emtpp//m5SGYx/KfWSjQ5Hp280YxWP0axWqPfaFYAq5fff+kog+K4nyRjJ35CbgJSdKoa058Xr17mmE2oTh7X6P6V9+if4QDSk75efhX7WuFMhkfCuBS6SUpQK+6C0AmPOng0IbdGCLZNfy7e1IKpdENIryk+HaW3TWBGvdUsLDz2tIjOXiRYWL2FKVTssyBKh4RF/GuWJt9WhhRqlS9If/cFNfhhL81KS+kAqQ6pcB3kPn/xrzYmkB6grlJ5/Vax4hbU+lh/Is3NgUh2Gju96GWRT2vTOJWjsgYnE0XjuZ3TQGGwtuEFiv7maIsK2B7q/Hnnan+2saIRsVMrGdOn/mlGFKjkgHR0TIqudch8q9TERzXkRO2Tv36m/Q6/PezkVohIFvFOfK2ZKCeYVrylHbdO3U8FOmMjU17LAXOwQafxloGb9uM/g4tyKkLIjerdxnr8Hc7TD3wPkOYFb1ExL6GWmMScmy95+4RMAZOLhcqMzO/CV4WPtjhuoaR2M3Z7u7kjL2dXiqHm/RfIwUejjEyfX107haSuXgeBPaJju0JDp7Dbcq6RY69RgJFEinxoYYgPzRwVBEm5eVH5eeF6Ezit1zT5xiOnT9vTKWfaF8dIs+hyrWSYi3MEKZwa6rVot7FiQc1FrjgV/L5KpDhXU1nB3KwG8NI3GDuJ/==</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xa" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xa</stringProp>
                   <stringProp name="Argument.value">lazada</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xt" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xt</stringProp>
                   <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -985,7 +1034,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.detail.getrecommend.msite/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771428747&amp;sign=1a4c69b8a6bfecab1baca95e2cfc7758&amp;api=mtop.lazada.detail.getRecommend.mSite&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=10000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475&amp;data=%7B%22shop_id%22%3A%2247797%22%2C%22search%22%3A%22flashsale%22%2C%22category_id%22%3A%221634%22%2C%22item_id%22%3A%22113580647%22%2C%22anonymous_id%22%3A%223b42b1d7-8bfe-4b3a-a44a-79cc93edc137%22%2C%22regional_key%22%3A%22080702010000%22%2C%22is_ab%22%3A%22false%22%2C%22sku%22%3A%22113580647_LK-1024812350%22%2C%22seller_id%22%3A%221000122000179%22%2C%22is_tbc%22%3A%220%22%2C%22_%22%3A%221730771425669%22%2C%22brand_id%22%3A%2239704%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.detail.getrecommend.msite/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771428747&amp;sign=1a4c69b8a6bfecab1baca95e2cfc7758&amp;api=mtop.lazada.detail.getRecommend.mSite&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=10000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475&amp;data=%7B%22shop_id%22%3A%2247797%22%2C%22search%22%3A%22flashsale%22%2C%22category_id%22%3A%221634%22%2C%22item_id%22%3A%22113580647%22%2C%22anonymous_id%22%3A%223b42b1d7-8bfe-4b3a-a44a-79cc93edc137%22%2C%22regional_key%22%3A%22080702010000%22%2C%22is_ab%22%3A%22false%22%2C%22sku%22%3A%22113580647_LK-1024812350%22%2C%22seller_id%22%3A%221000122000179%22%2C%22is_tbc%22%3A%220%22%2C%22_%22%3A%221730771425669%22%2C%22brand_id%22%3A%2239704%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1001,78 +1050,91 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;shop_id&quot;:&quot;47797&quot;,&quot;search&quot;:&quot;flashsale&quot;,&quot;category_id&quot;:&quot;1634&quot;,&quot;item_id&quot;:&quot;113580647&quot;,&quot;anonymous_id&quot;:&quot;3b42b1d7-8bfe-4b3a-a44a-79cc93edc137&quot;,&quot;regional_key&quot;:&quot;080702010000&quot;,&quot;is_ab&quot;:&quot;false&quot;,&quot;sku&quot;:&quot;113580647_LK-1024812350&quot;,&quot;seller_id&quot;:&quot;1000122000179&quot;,&quot;is_tbc&quot;:&quot;0&quot;,&quot;_&quot;:&quot;1730771425669&quot;,&quot;brand_id&quot;:&quot;39704&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">LK</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">1a4c69b8a6bfecab1baca95e2cfc7758</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.6.1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="timeout" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">timeout</stringProp>
                   <stringProp name="Argument.value">10000</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771428747</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sessionOption" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sessionOption</stringProp>
                   <stringProp name="Argument.value">AutoLoginOnly</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="AntiCreep" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">AntiCreep</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24937400</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="isSec" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1140,7 +1202,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimaccountservice.getloginuserinfo/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437210&amp;sign=af33cc303bf090131683bc03cd746e82&amp;api=mtop.im.use.web.buyer.mtopImAccountService.getLoginUserInfo&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimaccountservice.getloginuserinfo/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437210&amp;sign=af33cc303bf090131683bc03cd746e82&amp;api=mtop.im.use.web.buyer.mtopImAccountService.getLoginUserInfo&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1156,78 +1218,91 @@
                   <stringProp name="Argument.name">method</stringProp>
                   <stringProp name="Argument.value">GET</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;accessKey&quot;:&quot;lazada-pc-h5&quot;,&quot;accessToken&quot;:&quot;lazada-test-secret&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">lk</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="H5Request" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">H5Request</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">af33cc303bf090131683bc03cd746e82</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771437210</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24814220</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="syncCookieMode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">syncCookieMode</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1257,7 +1332,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1273,18 +1348,21 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">107!fvd7iIQYfQ6f5cGcWPJzTF8G9UNPvyx1O8XPJ/y7AT00az5SAT+UAy00YbF/9jhftSYmAiAp5/ihcsxGPWCNSuegrzVtrIwLffxu1sfgdwtfPFfPbh/HXxVTzWTiwUxK2Ko333ZeQ/upPffXYVs6eUQffSou2DyLe/XfXCqltUmPfaP23Pjlwwb3PIS6WSYn58PYdIGxWP4pzMfFdPsY5bnrfCd/2R5fff+kog+K4nyRjJ3gSYwFjaYv7wLVn1a3B3H5Ow2CyMAcSe5HCKzjMDH0Pe7GUMHLDmpeOmDPSSSvri3VN+r0Pc6JV100s3r63lMVCJeRGVuOUH3TtBQ/jKlSX6EduzSxmPb5zz8T+I4NV/DuaeyEWkOeRKubUai/Rokv7HmroTgN+Ak9CdL4C4dRVT5oIaOIAL+pY1eApDe7uv8mScwnLi33VuIc33TW8+HdYlzFwIgLBMoAqxirKFEcmZV5rb18SX40VwDPPe9WebHdTOgy72Oi3xJHMBLp59unUf9mGWwAN5+Z4OJL4K6wX0hMPQzEoVMa/fkHxt1yND8SAwRgMUHzn9aQly4Bb9IQByVaCpQQfh9y1ixIt9fX9fHpygjHdggBbK8ek9Sri3c7SybXm8gkgjuATU1nV/3dBHZFHTEB8obgmEwRGmmlhYL0IVloZZ6VcLxWHjl1ZmfKzrAisRIMJbLoh0sGpiTUIM55BrHVC/gmiX1Z9vRlRVkEyo2aASouYIpS/ZWzuRbtcNN9VlriDmIotxkQqySwgjFdlVA7ETnd1ww23GDviXO4hqqtDZk5gr0eciHnZWX0YAydWwdF4rd1pmrh0HogJzzWj2b+JthtgJKMPMIu4Ty3+zLwkAgdCoIA</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xa" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xa</stringProp>
                   <stringProp name="Argument.value">lzd-sc-im-center</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xt" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xt</stringProp>
                   <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -1304,7 +1382,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=25afeee2b2822c00768ff4639929fb2f&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_869%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=25afeee2b2822c00768ff4639929fb2f&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_869%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1320,78 +1398,91 @@
                   <stringProp name="Argument.name">method</stringProp>
                   <stringProp name="Argument.value">GET</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;accsAppKey&quot;:&quot;H5_24814220&quot;,&quot;accessKey&quot;:&quot;lazada-pc-h5&quot;,&quot;accessToken&quot;:&quot;lazada-test-secret&quot;,&quot;windowId&quot;:&quot;1790266904_869&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">lk</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="H5Request" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">H5Request</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">25afeee2b2822c00768ff4639929fb2f</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771437508</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24814220</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="syncCookieMode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">syncCookieMode</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1421,7 +1512,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.messagebox.querysessionlist/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=5fffd4aa5447ff22894f39c897f2ca7d&amp;api=mtop.im.use.web.buyer.messagebox.querySessionList&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22accountType%22%3A1%2C%22nodeId%22%3A1%2C%22startTime%22%3A-1%2C%22fetchCount%22%3A20%2C%22pageNum%22%3A1%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.messagebox.querysessionlist/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=5fffd4aa5447ff22894f39c897f2ca7d&amp;api=mtop.im.use.web.buyer.messagebox.querySessionList&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22accountType%22%3A1%2C%22nodeId%22%3A1%2C%22startTime%22%3A-1%2C%22fetchCount%22%3A20%2C%22pageNum%22%3A1%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1437,78 +1528,91 @@
                   <stringProp name="Argument.name">method</stringProp>
                   <stringProp name="Argument.value">GET</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;accessKey&quot;:&quot;lazada-pc-h5&quot;,&quot;accessToken&quot;:&quot;lazada-test-secret&quot;,&quot;accountType&quot;:1,&quot;nodeId&quot;:1,&quot;startTime&quot;:-1,&quot;fetchCount&quot;:20,&quot;pageNum&quot;:1}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">lk</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="H5Request" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">H5Request</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">5fffd4aa5447ff22894f39c897f2ca7d</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771437508</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24814220</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="syncCookieMode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">syncCookieMode</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1538,7 +1642,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimemojiservice.getall/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771439342&amp;sign=1c9f185f468029f95df67a4b98b0c732&amp;api=mtop.im.use.web.buyer.mtopImEmojiService.getAll&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimemojiservice.getall/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771439342&amp;sign=1c9f185f468029f95df67a4b98b0c732&amp;api=mtop.im.use.web.buyer.mtopImEmojiService.getAll&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1554,78 +1658,91 @@
                   <stringProp name="Argument.name">method</stringProp>
                   <stringProp name="Argument.value">GET</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;accessKey&quot;:&quot;lazada-pc-h5&quot;,&quot;accessToken&quot;:&quot;lazada-test-secret&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">lk</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="H5Request" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">H5Request</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">1c9f185f468029f95df67a4b98b0c732</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771439342</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24814220</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="syncCookieMode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">syncCookieMode</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1805,7 +1922,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.category.collect/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465737&amp;sign=81554b0b2684a4f0cc48c3aa268001e7&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.category.collect&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.category.collect/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465737&amp;sign=81554b0b2684a4f0cc48c3aa268001e7&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.category.collect&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1821,60 +1938,70 @@
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771465737</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en_US</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">81554b0b2684a4f0cc48c3aa268001e7</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">30267743</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">api</stringProp>
                   <stringProp name="Argument.value">mtop.lazada.cco.intl.helpcenter.knowledge.category.collect</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.6.1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;helpCenterInstanceId&quot;:&quot;10513010&quot;,&quot;sessionId&quot;:&quot;fd1334e06ba8423da6183c89f768b5a0&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -1902,7 +2029,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.list/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465738&amp;sign=883468a54bab72b6f2755e7245d6c8a1&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.list&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.list/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465738&amp;sign=883468a54bab72b6f2755e7245d6c8a1&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.list&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1918,60 +2045,70 @@
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771465738</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en_US</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">883468a54bab72b6f2755e7245d6c8a1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">30267743</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">api</stringProp>
                   <stringProp name="Argument.value">mtop.lazada.cco.intl.helpcenter.knowledge.list</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.6.1</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;helpCenterInstanceId&quot;:&quot;10513010&quot;,&quot;categoryId&quot;:&quot;1000001285&quot;,&quot;currPage&quot;:1,&quot;pageSize&quot;:10,&quot;sessionId&quot;:&quot;fd1334e06ba8423da6183c89f768b5a0&quot;,&quot;knowledgeId&quot;:&quot;&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2103,7 +2240,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2451,7 +2588,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771497833&amp;sign=a0124a5a7d994b2423cff682fc531f1d&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en_LK&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_457%22%7D" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771497833&amp;sign=a0124a5a7d994b2423cff682fc531f1d&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en_LK&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_457%22%7D">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2467,78 +2604,91 @@
                   <stringProp name="Argument.name">method</stringProp>
                   <stringProp name="Argument.value">GET</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="data" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">{&quot;accsAppKey&quot;:&quot;H5_24814220&quot;,&quot;accessKey&quot;:&quot;lazada-pc-h5&quot;,&quot;accessToken&quot;:&quot;lazada-test-secret&quot;,&quot;windowId&quot;:&quot;1790266904_457&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-regionID" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-regionID</stringProp>
                   <stringProp name="Argument.value">lk</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="H5Request" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">H5Request</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="dataType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">dataType</stringProp>
                   <stringProp name="Argument.value">json</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="sign" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">sign</stringProp>
                   <stringProp name="Argument.value">a0124a5a7d994b2423cff682fc531f1d</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="jsv" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">jsv</stringProp>
                   <stringProp name="Argument.value">2.7.2</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="type" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">type</stringProp>
                   <stringProp name="Argument.value">originaljson</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="t" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">t</stringProp>
                   <stringProp name="Argument.value">1730771497833</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="v" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">v</stringProp>
                   <stringProp name="Argument.value">1.0</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="x-i18n-language" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">x-i18n-language</stringProp>
                   <stringProp name="Argument.value">en_LK</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="appKey" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">appKey</stringProp>
                   <stringProp name="Argument.value">24814220</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="syncCookieMode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">syncCookieMode</stringProp>
                   <stringProp name="Argument.value">true</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="api" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2802,7 +2952,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2818,18 +2968,21 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">107!fHJUG0mvfQ6f58i/W/mQ4+8G9UNkkS5DzSSUf8hUAaszGnXUAT+e9asHQTQAwbR0WP/VD0aV7T5HHSVd3gGndfNIk2NR3AKffMd0jfS226XX4XWQVXgKMA2GypQ8Nqm9zDOBCipKVKfffNl0tJJiPfgmYVYoeAmfPfRHIN9iKfq4dIYqXNkGLYg63fjx5SGYxXG2WPYQdyCPdu4qCfGi2fxzXqqf08jauAVg7IUIZNlwsXKTOootq8AFINRMZkBqKpvzYChLGygXRdLgTAR5hhLrnuYakeRth5gszOWVlcBruevuJDLUgSOr49inQ5wGOO+klePS/ILQzFQ4VNCTPseg2a9sr4fRVLp2/CNmB+NSitpeO2UPBmCQESnkebDCDLFh47fZTF4BPG7t1uwQcnFcMVxNL5qdngEVTQxLh1hDfKTsNyZNTowdZ7r8MVOnJ4XjhJwU4jf0G/ZfKs+6O+yvn+QzNUuQoL83mwGgEKOGCujEfThe86100WGsPBDwNADrSKl8GjUvKeeNVuD5UcA1oaKni/FToSosgWHJ0vy/kHVsq67Avksdv307oP4Hjrku5W9o12CvaYou74f/ti87byIH28bDNlqoH0WkigE/DiugVGOmrRTKwWGzF048Wix3SYkAkr+DD+/m4OprfUCTwzne0nur9evXm/G8xMrLtHHN5ir6HH3nzuf2FBPzwmBi+sf7oIY/1pZmlCePIeCNHNAdVrBOKNQyLyhstYJISxbtJNlVVw3us7eo</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xa" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xa</stringProp>
                   <stringProp name="Argument.value">lzd-sc-im-center</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xt" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xt</stringProp>
                   <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -2914,7 +3067,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3037,7 +3190,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3253,7 +3406,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3269,18 +3422,21 @@
                   <stringProp name="Argument.name">data</stringProp>
                   <stringProp name="Argument.value">107!fuB7pRl4fQ6f5cImWPQoTF8G9UNua5esqKuzJ/guAT00az5SAT+UAy00YbFizi67wSYmAiAp5/ihcsxGPWCNSug3gnVtrIwLffxu1sfgdwtfPFfPbh/HXxVTzWT5wZMzh0/5mDpKVKfffNl0tJJiPfgmYVYoeAmfPfRHIN9iKfq4dIYqXNkGLYg63fjx5SGYxXG2WPYQdyCPdu4qCfGiAPxYxx8z/ffJ2p8JuQ58Zs5L94/tKexEPipxSTBqgieI3451PQvZRfe9yznuoyyobiC9B67vl+LcQb5bR6CdJB2HTY90axhS/Zf5FSf68mkqHzqU+8uuqgroPByQqF+PdJziteRldnxQZMKNZjGfxV17zO6bAOk6CCSQb4zKzDkDaDcN99iqJqJSdNIaAUdZqrg1dz0PND4bF3wlsMh0MtdflmHNK641xr1Go8gmv0KzJGeTlCY6M1bMnzl957scI6xt7j49la8t8VCK60bwbu1DwcH97pE3Z3WX02IMrrimPrztDrclx1oMtYbZuPDmLumeBBGvx1Gt4rXWhzQYYQooE+LPu4v8pQTpqoy/UJodjpk720lRZM+DXFv3Dl50OYmN3c4t8boIuQaoB3ZfhvgH2ulQKKPqDWgQ15rF4MujS+UH+iKckVApow2lq1OFsQ0DdxZwpbyssDNF12OOlZ5vJwEde/Aroh9Zd5LxKy8I6V6ywfMuaPMtaUzBupFZIKuErRCbE33jYD7+EGzr7lTjsK0DJDKV</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xa" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xa</stringProp>
                   <stringProp name="Argument.value">lazada</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="xt" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">xt</stringProp>
                   <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
@@ -3449,7 +3605,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
