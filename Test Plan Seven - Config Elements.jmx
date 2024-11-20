@@ -6,6 +6,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
@@ -29,7 +31,7 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="BASE_URL_1" elementType="Argument">
             <stringProp name="Argument.name">BASE_URL_1</stringProp>
@@ -69,7 +71,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <boolProp name="HTTPSampler.image_parser">true</boolProp>
         <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
         <intProp name="HTTPSampler.concurrentPool">6</intProp>
@@ -79,25 +81,25 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
         <collectionProp name="DNSCacheManager.servers"/>
         <collectionProp name="DNSCacheManager.hosts"/>
         <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
         <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
       </DNSCacheManager>
       <hashTree/>
-      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
         <collectionProp name="AuthManager.auth_list"/>
         <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
       </AuthManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
@@ -120,7 +122,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/?spm=a2a0e.tm80335410.header.dhome">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/?spm=a2a0e.tm80335410.header.dhome" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -161,7 +163,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -193,7 +195,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -225,7 +227,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -257,7 +259,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -289,7 +291,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -321,7 +323,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/?jsv=2.7.4&amp;appKey=24937400&amp;t=1730771414793&amp;sign=6a09fa01bf5d7a95969c0512c9b32084&amp;api=mtop.relationrecommend.LazadaRecommend.recommend&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;data=%7B%22appId%22%3A%2241701%22%2C%22params%22%3A%22%7B%5C%22appId%5C%22%3A%5C%2241701%5C%22%2C%5C%22isbackup%5C%22%3Atrue%2C%5C%22newTileEnable%5C%22%3Atrue%2C%5C%22language%5C%22%3A%5C%22en%5C%22%2C%5C%22region_id%5C%22%3A%5C%22LK%5C%22%2C%5C%22platform%5C%22%3A%5C%22pc%5C%22%2C%5C%22scene%5C%22%3A%5C%22homepage%5C%22%2C%5C%22appVersion%5C%22%3A%5C%227.48.0%5C%22%2C%5C%22anonymous_id%5C%22%3A%5C%225hCkHwXDQCoCAbahGLSN%2Bmwl%5C%22%2C%5C%22pageSize%5C%22%3A50%2C%5C%22userId%5C%22%3A0%2C%5C%22pageNo%5C%22%3A0%7D%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.relationrecommend.lazadarecommend.recommend/1.0/?jsv=2.7.4&amp;appKey=24937400&amp;t=1730771414793&amp;sign=6a09fa01bf5d7a95969c0512c9b32084&amp;api=mtop.relationrecommend.LazadaRecommend.recommend&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;data=%7B%22appId%22%3A%2241701%22%2C%22params%22%3A%22%7B%5C%22appId%5C%22%3A%5C%2241701%5C%22%2C%5C%22isbackup%5C%22%3Atrue%2C%5C%22newTileEnable%5C%22%3Atrue%2C%5C%22language%5C%22%3A%5C%22en%5C%22%2C%5C%22region_id%5C%22%3A%5C%22LK%5C%22%2C%5C%22platform%5C%22%3A%5C%22pc%5C%22%2C%5C%22scene%5C%22%3A%5C%22homepage%5C%22%2C%5C%22appVersion%5C%22%3A%5C%227.48.0%5C%22%2C%5C%22anonymous_id%5C%22%3A%5C%225hCkHwXDQCoCAbahGLSN%2Bmwl%5C%22%2C%5C%22pageSize%5C%22%3A50%2C%5C%22userId%5C%22%3A0%2C%5C%22pageNo%5C%22%3A0%7D%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -471,7 +473,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/products/professional-nova-foldable-hair-dryer-compact-and-powerful-for-salon-quality-styling-i113580647-s1024812350.html?scm=1007.51657.380827.0&amp;pvid=37d200a6-91e8-4998-b415-871c10f4582e&amp;search=flashsale&amp;spm=a2a0e.tm80335410.FlashSale.d_113580647">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://www.daraz.lk/products/professional-nova-foldable-hair-dryer-compact-and-powerful-for-salon-quality-styling-i113580647-s1024812350.html?scm=1007.51657.380827.0&amp;pvid=37d200a6-91e8-4998-b415-871c10f4582e&amp;search=flashsale&amp;spm=a2a0e.tm80335410.FlashSale.d_113580647" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -534,7 +536,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getContextInfo">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getContextInfo" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -558,7 +560,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.global.detail.web.getdetailinfo/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771423789&amp;sign=2f47373d683dc06e8515f33ef9187ab9&amp;api=mtop.global.detail.web.getDetailInfo&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.global.detail.web.getdetailinfo/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771423789&amp;sign=2f47373d683dc06e8515f33ef9187ab9&amp;api=mtop.global.detail.web.getDetailInfo&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -758,7 +760,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://cart.daraz.lk/cart/api/count" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -790,7 +792,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.guided.shopping.categories.categorieslpcommon/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771424268&amp;sign=f6825a7052a608b1bce6b13c104db4a3&amp;api=mtop.lazada.guided.shopping.categories.categoriesLpCommon&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;appkey=24677475&amp;data=%7B%22regionId%22%3A%22LK%22%2C%22language%22%3A%22en%22%2C%22platform%22%3A%22pc%22%2C%22isbackup%22%3A%22true%22%2C%22backupParams%22%3A%22language%2CregionID%2Cplatform%2CpageNo%22%2C%22moduleName%22%3A%22categoriesLpMultiFloor%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.guided.shopping.categories.categorieslpcommon/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771424268&amp;sign=f6825a7052a608b1bce6b13c104db4a3&amp;api=mtop.lazada.guided.shopping.categories.categoriesLpCommon&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=20000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;appkey=24677475&amp;data=%7B%22regionId%22%3A%22LK%22%2C%22language%22%3A%22en%22%2C%22platform%22%3A%22pc%22%2C%22isbackup%22%3A%22true%22%2C%22backupParams%22%3A%22language%2CregionID%2Cplatform%2CpageNo%22%2C%22moduleName%22%3A%22categoriesLpMultiFloor%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -952,7 +954,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -984,7 +986,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1034,7 +1036,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.detail.getrecommend.msite/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771428747&amp;sign=1a4c69b8a6bfecab1baca95e2cfc7758&amp;api=mtop.lazada.detail.getRecommend.mSite&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=10000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475&amp;data=%7B%22shop_id%22%3A%2247797%22%2C%22search%22%3A%22flashsale%22%2C%22category_id%22%3A%221634%22%2C%22item_id%22%3A%22113580647%22%2C%22anonymous_id%22%3A%223b42b1d7-8bfe-4b3a-a44a-79cc93edc137%22%2C%22regional_key%22%3A%22080702010000%22%2C%22is_ab%22%3A%22false%22%2C%22sku%22%3A%22113580647_LK-1024812350%22%2C%22seller_id%22%3A%221000122000179%22%2C%22is_tbc%22%3A%220%22%2C%22_%22%3A%221730771425669%22%2C%22brand_id%22%3A%2239704%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.detail.getrecommend.msite/1.0/?jsv=2.6.1&amp;appKey=24937400&amp;t=1730771428747&amp;sign=1a4c69b8a6bfecab1baca95e2cfc7758&amp;api=mtop.lazada.detail.getRecommend.mSite&amp;v=1.0&amp;type=originaljson&amp;isSec=1&amp;AntiCreep=true&amp;timeout=10000&amp;dataType=json&amp;sessionOption=AutoLoginOnly&amp;x-i18n-language=en&amp;x-i18n-regionID=LK&amp;traffic=drz-replatform&amp;appkey=24677475&amp;data=%7B%22shop_id%22%3A%2247797%22%2C%22search%22%3A%22flashsale%22%2C%22category_id%22%3A%221634%22%2C%22item_id%22%3A%22113580647%22%2C%22anonymous_id%22%3A%223b42b1d7-8bfe-4b3a-a44a-79cc93edc137%22%2C%22regional_key%22%3A%22080702010000%22%2C%22is_ab%22%3A%22false%22%2C%22sku%22%3A%22113580647_LK-1024812350%22%2C%22seller_id%22%3A%221000122000179%22%2C%22is_tbc%22%3A%220%22%2C%22_%22%3A%221730771425669%22%2C%22brand_id%22%3A%2239704%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1202,7 +1204,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimaccountservice.getloginuserinfo/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437210&amp;sign=af33cc303bf090131683bc03cd746e82&amp;api=mtop.im.use.web.buyer.mtopImAccountService.getLoginUserInfo&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimaccountservice.getloginuserinfo/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437210&amp;sign=af33cc303bf090131683bc03cd746e82&amp;api=mtop.im.use.web.buyer.mtopImAccountService.getLoginUserInfo&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1332,7 +1334,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1382,7 +1384,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=25afeee2b2822c00768ff4639929fb2f&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_869%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=25afeee2b2822c00768ff4639929fb2f&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_869%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1512,7 +1514,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.messagebox.querysessionlist/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=5fffd4aa5447ff22894f39c897f2ca7d&amp;api=mtop.im.use.web.buyer.messagebox.querySessionList&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22accountType%22%3A1%2C%22nodeId%22%3A1%2C%22startTime%22%3A-1%2C%22fetchCount%22%3A20%2C%22pageNum%22%3A1%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.messagebox.querysessionlist/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771437508&amp;sign=5fffd4aa5447ff22894f39c897f2ca7d&amp;api=mtop.im.use.web.buyer.messagebox.querySessionList&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22accountType%22%3A1%2C%22nodeId%22%3A1%2C%22startTime%22%3A-1%2C%22fetchCount%22%3A20%2C%22pageNum%22%3A1%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1642,7 +1644,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimemojiservice.getall/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771439342&amp;sign=1c9f185f468029f95df67a4b98b0c732&amp;api=mtop.im.use.web.buyer.mtopImEmojiService.getAll&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimemojiservice.getall/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771439342&amp;sign=1c9f185f468029f95df67a4b98b0c732&amp;api=mtop.im.use.web.buyer.mtopImEmojiService.getAll&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1922,7 +1924,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.category.collect/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465737&amp;sign=81554b0b2684a4f0cc48c3aa268001e7&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.category.collect&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.category.collect/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465737&amp;sign=81554b0b2684a4f0cc48c3aa268001e7&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.category.collect&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2029,7 +2031,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.list/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465738&amp;sign=883468a54bab72b6f2755e7245d6c8a1&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.list&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.lazada.cco.intl.helpcenter.knowledge.list/1.0/?jsv=2.6.1&amp;appKey=30267743&amp;t=1730771465738&amp;sign=883468a54bab72b6f2755e7245d6c8a1&amp;api=mtop.lazada.cco.intl.helpcenter.knowledge.list&amp;type=originaljson&amp;dataType=json&amp;v=1.0&amp;x-i18n-language=en_US" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2240,7 +2242,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2588,7 +2590,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771497833&amp;sign=a0124a5a7d994b2423cff682fc531f1d&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en_LK&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_457%22%7D">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://acs-m.daraz.lk/h5/mtop.im.use.web.buyer.mtopimtokenservice.gettoken/1.0/?jsv=2.7.2&amp;appKey=24814220&amp;t=1730771497833&amp;sign=a0124a5a7d994b2423cff682fc531f1d&amp;api=mtop.im.use.web.buyer.mtopImTokenService.getToken&amp;v=1.0&amp;H5Request=true&amp;syncCookieMode=true&amp;x-i18n-language=en_LK&amp;x-i18n-regionID=lk&amp;dataType=json&amp;method=GET&amp;type=originaljson&amp;data=%7B%22accsAppKey%22%3A%22H5_24814220%22%2C%22accessKey%22%3A%22lazada-pc-h5%22%2C%22accessToken%22%3A%22lazada-test-secret%22%2C%22windowId%22%3A%221790266904_457%22%7D" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2952,7 +2954,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3067,7 +3069,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getUser" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3190,7 +3192,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://my.daraz.lk/api/recentOrders/" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3406,7 +3408,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://umlazada.alibaba.com/service/um.json" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -3605,7 +3607,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://member.daraz.lk/user/api/getCsrfToken" enabled="true">
             <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -5096,7 +5098,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
